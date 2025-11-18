@@ -6,3 +6,6 @@ pillow
 opencv-python
 reportlab
 flask-cors
+Flask-SQLAlchemy
+Flask-Migrate
+PyMySQL
