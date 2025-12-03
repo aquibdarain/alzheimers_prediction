@@ -1,27 +1,33 @@
-# app.py - create_app and register blueprints
+# app.py
 from flask import Flask
-from utils.logging_config import init_logging
-from config import Config
 from flask_cors import CORS
+from utils.logging_config import init_logging
+from services.db import init_db
+from config import Config
+
+# <-- new import
+from services.db import init_db
+# ensure models are imported when app starts so migrations detect them
+import models
 
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
 
-     # <-- Add this
-    # Allow only your frontend origin in production (example below)
-    # For development you can allow all origins, but restrict in production.
-    FRONTEND_ORIGINS = ["http://localhost:3000"]  # change to your frontend URL
+    # CORS (dev)
+    FRONTEND_ORIGINS = ["http://localhost:3000"]
     CORS(app, resources={r"/*": {"origins": FRONTEND_ORIGINS}}, supports_credentials=True)
-    # -->
     CORS(app)   # WARNING: allows all origins
 
     # initialize logging
     init_logging(app)
 
+    # initialize DB & migrations
+    init_db(app)
+
     # register blueprints
     from routes.health import health_bp
-    from routes.predict import predict_bp  # safe to import now (file may be placeholder)
+    from routes.predict import predict_bp
     app.register_blueprint(health_bp)
     app.register_blueprint(predict_bp)
 

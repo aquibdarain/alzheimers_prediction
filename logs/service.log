@@ -199,3 +199,141 @@
 2025-11-16 12:22:33,773 | INFO | app | Predict info endpoint called
 2025-11-16 12:22:33,773 | INFO | app | Predict info endpoint called
 2025-11-16 12:22:33,775 | INFO | werkzeug | 127.0.0.1 - - [16/Nov/2025 12:22:33] "GET /predict/ HTTP/1.1" 200 -
+2025-11-19 16:14:29,720 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:14:29,720 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:14:29,838 | INFO | app | Database initialized with Flask app
+2025-11-19 16:14:29,838 | INFO | app | Database initialized with Flask app
+2025-11-19 16:14:41,716 | INFO | app | Application created and blueprints registered
+2025-11-19 16:14:41,716 | INFO | app | Application created and blueprints registered
+2025-11-19 16:14:41,766 | INFO | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.202.163:5000
+2025-11-19 16:14:41,766 | INFO | werkzeug | [33mPress CTRL+C to quit[0m
+2025-11-19 16:14:41,770 | INFO | werkzeug |  * Restarting with stat
+2025-11-19 16:14:43,224 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:14:43,224 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:14:43,311 | INFO | app | Database initialized with Flask app
+2025-11-19 16:14:43,311 | INFO | app | Database initialized with Flask app
+2025-11-19 16:14:49,035 | INFO | app | Application created and blueprints registered
+2025-11-19 16:14:49,035 | INFO | app | Application created and blueprints registered
+2025-11-19 16:14:49,050 | WARNING | werkzeug |  * Debugger is active!
+2025-11-19 16:14:49,076 | INFO | werkzeug |  * Debugger PIN: 602-377-826
+2025-11-19 16:22:08,191 | INFO | werkzeug |  * Detected change in 'D:\\AQUIB DARAIN\\projects_others\\New folder\\alzheimers-project\\models\\__init__.py', reloading
+2025-11-19 16:22:09,791 | INFO | werkzeug |  * Restarting with stat
+2025-11-19 16:22:11,586 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:22:11,586 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:22:11,680 | INFO | app | Database initialized with Flask app
+2025-11-19 16:22:11,680 | INFO | app | Database initialized with Flask app
+2025-11-19 16:22:18,102 | INFO | app | Application created and blueprints registered
+2025-11-19 16:22:18,102 | INFO | app | Application created and blueprints registered
+2025-11-19 16:22:18,120 | WARNING | werkzeug |  * Debugger is active!
+2025-11-19 16:22:18,128 | INFO | werkzeug |  * Debugger PIN: 602-377-826
+2025-11-19 16:22:25,239 | INFO | werkzeug |  * Detected change in 'D:\\AQUIB DARAIN\\projects_others\\New folder\\alzheimers-project\\models\\patient.py', reloading
+2025-11-19 16:22:26,642 | INFO | werkzeug |  * Restarting with stat
+2025-11-19 16:22:28,308 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:22:28,308 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:22:28,399 | INFO | app | Database initialized with Flask app
+2025-11-19 16:22:28,399 | INFO | app | Database initialized with Flask app
+2025-11-19 16:22:34,485 | INFO | app | Application created and blueprints registered
+2025-11-19 16:22:34,485 | INFO | app | Application created and blueprints registered
+2025-11-19 16:22:34,502 | WARNING | werkzeug |  * Debugger is active!
+2025-11-19 16:22:34,511 | INFO | werkzeug |  * Debugger PIN: 602-377-826
+2025-11-19 16:23:27,058 | INFO | werkzeug |  * Detected change in 'D:\\AQUIB DARAIN\\projects_others\\New folder\\alzheimers-project\\create_tables.py', reloading
+2025-11-19 16:23:28,659 | INFO | werkzeug |  * Restarting with stat
+2025-11-19 16:23:30,263 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:23:30,263 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:23:30,361 | INFO | app | Database initialized with Flask app
+2025-11-19 16:23:30,361 | INFO | app | Database initialized with Flask app
+2025-11-19 16:23:38,751 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:23:38,751 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:23:38,830 | INFO | app | Database initialized with Flask app
+2025-11-19 16:23:38,830 | INFO | app | Database initialized with Flask app
+2025-11-19 16:23:44,776 | INFO | app | Application created and blueprints registered
+2025-11-19 16:23:44,776 | INFO | app | Application created and blueprints registered
+2025-11-19 16:25:30,269 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:25:30,269 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:25:30,355 | INFO | app | Database initialized with Flask app
+2025-11-19 16:25:30,355 | INFO | app | Database initialized with Flask app
+2025-11-19 16:25:36,729 | INFO | app | Application created and blueprints registered
+2025-11-19 16:25:36,729 | INFO | app | Application created and blueprints registered
+2025-11-19 16:25:59,511 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:25:59,511 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:26:00,378 | INFO | app | Database initialized with Flask app
+2025-11-19 16:26:00,378 | INFO | app | Database initialized with Flask app
+2025-11-19 16:26:06,406 | INFO | app | Application created and blueprints registered
+2025-11-19 16:26:06,406 | INFO | app | Application created and blueprints registered
+2025-11-19 16:34:34,570 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:34:34,570 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-11-19 16:34:34,720 | INFO | app | Database initialized with Flask app
+2025-11-19 16:34:34,720 | INFO | app | Database initialized with Flask app
+2025-11-19 16:34:41,431 | INFO | app | Application created and blueprints registered
+2025-11-19 16:34:41,431 | INFO | app | Application created and blueprints registered
+2025-12-03 11:25:14,363 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:25:14,363 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:25:15,008 | INFO | app | Database initialized with Flask app
+2025-12-03 11:25:15,008 | INFO | app | Database initialized with Flask app
+2025-12-03 11:25:26,610 | INFO | app | Application created and blueprints registered
+2025-12-03 11:25:26,610 | INFO | app | Application created and blueprints registered
+2025-12-03 11:25:26,675 | INFO | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.30:5000
+2025-12-03 11:25:26,676 | INFO | werkzeug | [33mPress CTRL+C to quit[0m
+2025-12-03 11:25:26,680 | INFO | werkzeug |  * Restarting with stat
+2025-12-03 11:25:28,459 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:25:28,459 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:25:28,651 | INFO | app | Database initialized with Flask app
+2025-12-03 11:25:28,651 | INFO | app | Database initialized with Flask app
+2025-12-03 11:25:35,368 | INFO | app | Application created and blueprints registered
+2025-12-03 11:25:35,368 | INFO | app | Application created and blueprints registered
+2025-12-03 11:25:35,385 | WARNING | werkzeug |  * Debugger is active!
+2025-12-03 11:25:35,398 | INFO | werkzeug |  * Debugger PIN: 602-377-826
+2025-12-03 11:30:08,536 | INFO | app | Predict info endpoint called
+2025-12-03 11:30:08,536 | INFO | app | Predict info endpoint called
+2025-12-03 11:30:08,541 | INFO | werkzeug | 127.0.0.1 - - [03/Dec/2025 11:30:08] "GET /predict/ HTTP/1.1" 200 -
+2025-12-03 11:30:19,575 | INFO | werkzeug | 127.0.0.1 - - [03/Dec/2025 11:30:19] "GET /predict/heat/a9b2e1b9c6a04059beefb0c170f80020_heat.jpg HTTP/1.1" 200 -
+2025-12-03 11:30:32,528 | INFO | app | Received prediction request
+2025-12-03 11:30:32,528 | INFO | app | Received prediction request
+2025-12-03 11:30:32,544 | INFO | app | Saved upload to uploads\ab8e1d5aafcd4fa8b6f80442b555e18d.jpg
+2025-12-03 11:30:32,544 | INFO | app | Saved upload to uploads\ab8e1d5aafcd4fa8b6f80442b555e18d.jpg
+2025-12-03 11:30:32,732 | INFO | app | No model file at model/alzheimer_model.pth, using default ResNet18 (untrained).
+2025-12-03 11:30:32,732 | INFO | app | No model file at model/alzheimer_model.pth, using default ResNet18 (untrained).
+2025-12-03 11:30:33,194 | INFO | app | Model prediction: {'label': 'Normal', 'index': 0, 'probabilities': [0.6803748607635498, 0.09030254185199738, 0.22932271659374237]}
+2025-12-03 11:30:33,194 | INFO | app | Model prediction: {'label': 'Normal', 'index': 0, 'probabilities': [0.6803748607635498, 0.09030254185199738, 0.22932271659374237]}
+2025-12-03 11:30:33,511 | INFO | app | Saved Grad-CAM overlay to uploads\ab8e1d5aafcd4fa8b6f80442b555e18d_heat.jpg
+2025-12-03 11:30:33,511 | INFO | app | Saved Grad-CAM overlay to uploads\ab8e1d5aafcd4fa8b6f80442b555e18d_heat.jpg
+2025-12-03 11:30:33,694 | INFO | app | Generated PDF report: uploads\ab8e1d5aafcd4fa8b6f80442b555e18d_report.pdf
+2025-12-03 11:30:33,694 | INFO | app | Generated PDF report: uploads\ab8e1d5aafcd4fa8b6f80442b555e18d_report.pdf
+2025-12-03 11:30:33,696 | INFO | werkzeug | 127.0.0.1 - - [03/Dec/2025 11:30:33] "POST /predict/ HTTP/1.1" 200 -
+2025-12-03 11:30:39,349 | INFO | app | Predict info endpoint called
+2025-12-03 11:30:39,349 | INFO | app | Predict info endpoint called
+2025-12-03 11:30:39,350 | INFO | werkzeug | 127.0.0.1 - - [03/Dec/2025 11:30:39] "GET /predict/ HTTP/1.1" 200 -
+2025-12-03 11:36:11,013 | INFO | werkzeug |  * Detected change in 'D:\\AQUIB DARAIN\\projects_others\\New folder\\alzheimers-project\\models\\patient.py', reloading
+2025-12-03 11:36:12,172 | INFO | werkzeug |  * Restarting with stat
+2025-12-03 11:36:13,588 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:36:13,588 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:36:13,715 | INFO | app | Database initialized with Flask app
+2025-12-03 11:36:13,715 | INFO | app | Database initialized with Flask app
+2025-12-03 11:36:19,092 | INFO | app | Application created and blueprints registered
+2025-12-03 11:36:19,092 | INFO | app | Application created and blueprints registered
+2025-12-03 11:36:19,108 | WARNING | werkzeug |  * Debugger is active!
+2025-12-03 11:36:19,112 | INFO | werkzeug |  * Debugger PIN: 602-377-826
+2025-12-03 11:37:19,620 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:37:19,620 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:37:19,759 | INFO | app | Database initialized with Flask app
+2025-12-03 11:37:19,759 | INFO | app | Database initialized with Flask app
+2025-12-03 11:37:25,727 | INFO | app | Application created and blueprints registered
+2025-12-03 11:37:25,727 | INFO | app | Application created and blueprints registered
+2025-12-03 11:37:55,338 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:37:55,338 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:37:55,477 | INFO | app | Database initialized with Flask app
+2025-12-03 11:37:55,477 | INFO | app | Database initialized with Flask app
+2025-12-03 11:38:01,901 | INFO | app | Application created and blueprints registered
+2025-12-03 11:38:01,901 | INFO | app | Application created and blueprints registered
+2025-12-03 11:42:59,514 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:42:59,514 | INFO | app | Logging initialized (level=INFO) - log file: logs\service.log
+2025-12-03 11:42:59,667 | INFO | app | Database initialized with Flask app
+2025-12-03 11:42:59,667 | INFO | app | Database initialized with Flask app
+2025-12-03 11:43:05,399 | INFO | app | Application created and blueprints registered
+2025-12-03 11:43:05,399 | INFO | app | Application created and blueprints registered
