@@ -1,5 +1,5 @@
 # models/result.py
-from services.db import db
+from . import db
 from datetime import datetime
 
 class Result(db.Model):
@@ -7,25 +7,23 @@ class Result(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     patient_id = db.Column(db.Integer, db.ForeignKey("patients.id"), nullable=False)
-    uuid = db.Column(db.String(64), nullable=False, unique=True)
+    prediction_label = db.Column(db.String(50), nullable=False)
+    confidence = db.Column(db.Float, nullable=False)
+    probabilities = db.Column(db.JSON, nullable=False)
+    mri_image_path = db.Column(db.String(255))
+    heatmap_path = db.Column(db.String(255))
+    report_path = db.Column(db.String(255))
+    predicted_at = db.Column(db.DateTime, default=datetime.utcnow)
 
-    # file paths (store relative path or S3 key)
-    image_path = db.Column(db.String(512), nullable=False)
-    heatmap_path = db.Column(db.String(512), nullable=True)
-    report_path = db.Column(db.String(512), nullable=True)
-
-    # prediction details
-    label = db.Column(db.String(64), nullable=True)
-    prob_normal = db.Column(db.Float, nullable=True)
-    prob_mci = db.Column(db.Float, nullable=True)
-    prob_alzheimer = db.Column(db.Float, nullable=True)
-
-    suggestion_text = db.Column(db.Text, nullable=True)
-    review_status = db.Column(db.String(32), default="pending")
-    notes = db.Column(db.Text, nullable=True)
-
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    updated_at = db.Column(db.DateTime, onupdate=datetime.utcnow)
-
-    # relationship
-    patient = db.relationship("Patient", backref=db.backref("results", lazy="dynamic"))
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "patient_id": self.patient_id,
+            "prediction_label": self.prediction_label,
+            "confidence": self.confidence,
+            "probabilities": self.probabilities,
+            "mri_image_path": self.mri_image_path,
+            "heatmap_path": self.heatmap_path,
+            "report_path": self.report_path,
+            "predicted_at": self.predicted_at.isoformat() + "Z" if self.predicted_at else None
+        }

@@ -2,30 +2,39 @@
 from flask import Flask
 from flask_cors import CORS
 from utils.logging_config import init_logging
-from services.db import init_db
 from config import Config
 
-# <-- new import
-from services.db import init_db
-# ensure models are imported when app starts so migrations detect them
-import models
+# ───────────────────────────────
+# CRITICAL: Import the ONE AND ONLY db from models
+# ───────────────────────────────
+from models import db  # ← This is the correct db instance!
+
+# Ensure all models are imported (so tables get registered)
+import models  # This triggers Patient, Result import
 
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
 
-    # CORS (dev)
-    FRONTEND_ORIGINS = ["http://localhost:3000"]
+    # CORS
+    FRONTEND_ORIGINS = ["http://localhost:3000", "http://127.0.0.1:3000"]
     CORS(app, resources={r"/*": {"origins": FRONTEND_ORIGINS}}, supports_credentials=True)
-    CORS(app)   # WARNING: allows all origins
+    # Remove the second CORS(app) if you want to restrict origins
 
-    # initialize logging
+    # Initialize logging
     init_logging(app)
 
-    # initialize DB & migrations
-    init_db(app)
+    # ───────────────────────────────
+    # THIS IS THE FIX: Use db.init_app(app) NOT init_db(app)
+    # ───────────────────────────────
+    db.init_app(app)
 
-    # register blueprints
+    # Create tables if they don't exist (safe to run every time)
+    with app.app_context():
+        db.create_all()  # ← Creates patients & results tables
+        app.logger.info("Database tables ensured (db.create_all())")
+
+    # Register blueprints
     from routes.health import health_bp
     from routes.predict import predict_bp
     app.register_blueprint(health_bp)
@@ -33,6 +42,7 @@ def create_app():
 
     app.logger.info("Application created and blueprints registered")
     return app
+
 
 if __name__ == "__main__":
     app = create_app()
