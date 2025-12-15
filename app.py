@@ -1,7 +1,6 @@
 # app.py
 from flask import Flask
 from flask_cors import CORS
-from utils.logging_config import init_logging
 from config import Config
 
 # ───────────────────────────────
@@ -21,8 +20,7 @@ def create_app():
     CORS(app, resources={r"/*": {"origins": FRONTEND_ORIGINS}}, supports_credentials=True)
     # Remove the second CORS(app) if you want to restrict origins
 
-    # Initialize logging
-    init_logging(app)
+  
 
     # ───────────────────────────────
     # THIS IS THE FIX: Use db.init_app(app) NOT init_db(app)
@@ -46,4 +44,5 @@ def create_app():
 
 if __name__ == "__main__":
     app = create_app()
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)  
+    

@@ -1,33 +1,3 @@
-# # config.py
-# import os
-# from dotenv import load_dotenv
-# load_dotenv(override=True)  # or better:
-# load_dotenv(override=True, interpolate=True)
-
-# load_dotenv()   # Load .env file
-
-# class Config:
-#     # Database
-#     SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL")
-#     SQLALCHEMY_TRACK_MODIFICATIONS = False
-
-#     # App settings
-#     UPLOAD_DIR = os.getenv("UPLOAD_DIR", "uploads")
-#     LOG_DIR = os.getenv("LOG_DIR", "logs")
-#     MODEL_PATH = os.getenv("MODEL_PATH", "model/alzheimer_model.pth")
-
-#     DEBUG = os.getenv("DEBUG", "False").lower() in ("1", "true", "yes")
-
-# # Ensure folders exist
-# os.makedirs(Config.UPLOAD_DIR, exist_ok=True)
-# os.makedirs(Config.LOG_DIR, exist_ok=True)
-# os.makedirs(os.path.dirname(Config.MODEL_PATH) or ".", exist_ok=True)
-
-
-
-
-
-# config.py
 import os
 from dotenv import load_dotenv
 
@@ -63,16 +33,3 @@ class Config:
     # ───────────────────────────────────────
     MAX_CONTENT_LENGTH = 5 * 1024 * 1024  # 5 MB limit for MRI images
 
-
-# ───────────────────────────────────────────
-# Create required directories at startup
-# ───────────────────────────────────────────
-def init_directories():
-    os.makedirs(Config.UPLOAD_DIR, exist_ok=True)
-    os.makedirs(Config.LOG_DIR, exist_ok=True)
-    model_dir = os.path.dirname(Config.MODEL_PATH)
-    if model_dir:
-        os.makedirs(model_dir, exist_ok=True)
-
-# Run on import (safe in Flask context)
-init_directories()
