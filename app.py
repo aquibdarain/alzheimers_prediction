@@ -16,8 +16,13 @@ def create_app():
     app.config.from_object(Config)
 
     # CORS
-    FRONTEND_ORIGINS = ["http://localhost:3000", "http://127.0.0.1:3000"]
-    CORS(app, resources={r"/*": {"origins": FRONTEND_ORIGINS}}, supports_credentials=True)
+    # FRONTEND_ORIGINS = ["http://localhost:3000", "http://127.0.0.1:3000"]
+
+    CORS(app, resources={r"/*": {"origins": [
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "http://3.109.49.203"
+    ]}})
     # Remove the second CORS(app) if you want to restrict origins
 
   
