@@ -12,6 +12,7 @@ if __name__ == '__main__':
     # CONFIG
     # ================================
     DATASET_PATH = "../dataset_alzheimers"          # One level up from services/
+    # MODEL_SAVE_PATH = "../ml/alzheimer_model.pth"   # Save in project root
     MODEL_SAVE_PATH = "../ml/alzheimer_model.pth"   # Save in project root
     BATCH_SIZE = 32
     EPOCHS = 4
